@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Jost', sans-serif;
+    background-image: url(../../../assets/Screenshot\ \(188\).png);
+    
+}
+
+
+.container {
+    width: 400px;
+    padding: 16px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+input {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+input[type=submit]:hover {
+    opacity:1;
+}

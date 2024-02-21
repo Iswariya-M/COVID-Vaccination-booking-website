@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+}
+body{
+    line-height: 1.4;
+    color: var(--dark);
+    height: 20vh;
+}
+header{
+    min-height: 70vh;
+    background: linear-gradient(rgba(255, 253, 253, 0.4), rgba(242, 239, 239, 0.4));
+    background-color:whitesmoke;
+    background-size: cover;  
+    background-repeat: no-repeat;    
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    
+}
+
+
+    
+.navbar{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.2rem;
+}
+.navbar-brand{
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--Playfair);
+    letter-spacing: 1px;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: center;
+    display: flex;
+}
+.navbar-nav a{
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover{
+    opacity: 0.7;
+}
+
+
+
+
+/* Media Queries */
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    
+}
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+   
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:60px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-top: 80px;
+
+}
+
+.content h1{
+    font-size: 1cm;
+}
+
+.content p{
+    font-size: 0.5cm;
+}
+
+.image {
+    flex: 1;
+    padding: 20px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container-vac {
+    max-width: 100%;
+    margin: 0 auto;
+   }
+   
+   .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   }
+   
+   .col-sm {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+   }
+   
+   .read-more {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+   }
+   button{
+    background-color:#e6eaee;
+    text-align: center;
+    margin-left: 20px;
+    align-items: center;
+    height:40px;
+    text-emphasis-color: white;
+    color: rgb(93, 75, 143);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 5px;
+    border-color:#e6eaee;
+    width:200px ;
+    font-size: 0.5cm;
+    margin-top: 50px;
+    
+   }
+   button:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: #99bde2;
+   }
+
+/* covid-19-vaccine.component.css */
+.covid-19-vaccine {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin:30px;
+   }
+   
+   .container-va {
+    display: flex;
+   }
+   
+   .image-section {
+    margin: 50px;
+    height: 50px;
+    
+   }
+   .image-section img{
+    width: 400px;
+    height: 300px;
+   }
+
+   .content-section{
+    
+    flex: 1;
+    padding: 20px;
+    margin: 30px;
+    
+   }
+   
+  
+   
+ 
+   .vaccine-details {
+    margin-bottom: 20px;
+   }
+
+
+/* footer */
+footer{
+    background-color:rgba(126, 129, 146, 0.747); 
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover{
+    background: #fff;
+    color: var(--exDark);
+}
+.footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}

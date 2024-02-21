@@ -1,0 +1,34 @@
+<app-nav></app-nav>
+
+<div class="container">
+    <div class="covid-19-vaccine">
+        <div class="search-container">
+            <!-- <input type="text" placeholder="Search the places available" class="search-input"> -->
+            <label for="searchInput">Search by Name:</label>
+            <input type="text" id="searchInput" [(ngModel)]="searchQuery" (input)="searchHospitals()">  
+            <button (click)="clearSearch()">Clear</button>  
+        </div>
+        
+    </div>
+    </div>
+    <section>
+        <div *ngFor="let hospital of  hospitals">
+          <div class="hospital">
+            <img [src]="hospital.image" alt="{{ hospital.name }} Image">
+            <h3>{{ hospital.name }}</h3>
+            <p>{{ hospital.address }}</p>
+            <a routerLink="/booking"><button class="button-book"  >book
+             
+            </button></a>
+            <!-- You can add more details or actions if needed -->
+          </div>
+        </div>
+      </section>
+      <!-- ... rest of your HTML -->
+<section *ngIf="searchResultsNotFound">
+  <p>No matching results found.</p>
+</section>
+<!-- ... rest of your HTML -->
+
+    
+

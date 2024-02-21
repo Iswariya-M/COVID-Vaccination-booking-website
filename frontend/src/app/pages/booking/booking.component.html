@@ -1,0 +1,26 @@
+<app-nav></app-nav>
+<div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="booking.name" required>
+  
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="text" id="phoneNumber" [(ngModel)]="booking.phoneNumber" required>
+  
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" [(ngModel)]="booking.dob" (change)="calculateAge()" required>
+  
+    <label for="age">Age:</label>
+    <input type="text" id="age" [(ngModel)]="booking.age" readonly>
+  
+    <label for="bookingDate">Booking Date:</label>
+    <input type="date" id="bookingDate" [(ngModel)]="booking.bookingDate" required>
+  
+    <label for="hospital">Hospital:</label>
+    <select id="hospital" [(ngModel)]="booking.hospital" required>
+      <option *ngFor="let hospital of hospitals" [value]="hospital.name">{{ hospital.name }}</option>
+    </select>
+  
+    <button (click)="submitBooking()">Submit Booking</button>
+  </div>
+  
+  
